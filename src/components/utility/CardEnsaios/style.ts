@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+interface WrapperProps {
+    widthCards: string
+}
+
+export const Wrapper = styled.div<WrapperProps>`
     width: ${props => props.widthCards};
     position: relative;
 

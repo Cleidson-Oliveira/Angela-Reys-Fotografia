@@ -1,14 +1,20 @@
 import { Wrapper } from "./style";
 
-export default function Input({ type, labelText, placeholderText }) {
+interface InputProps {
+    type: string,
+    labelText: string,
+    placeholderText: string
+}
+
+export default function Input({ type, labelText, placeholderText }: InputProps) {
     return (type=="textArea") ? (
         <Wrapper>
             <p>
                 {labelText}
             </p>
             <textarea 
-                cols="30" 
-                rows="5"
+                cols={30}
+                rows={5}
                 placeholder={placeholderText}
             />
         </Wrapper>

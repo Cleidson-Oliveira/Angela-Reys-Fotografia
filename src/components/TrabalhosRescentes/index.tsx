@@ -29,7 +29,7 @@ export default function RecentWorks({ ensaiosRecentes }: RecentWorksProps) {
                     apiDataEnsaios={ensaiosRecentes}
                 />                
             </Wrapper>
-            <Button caminho="/galeria">Ver mais</Button>
+            <Button caminho="/galeria/todos">{"Ver mais"}</Button>
             
         </div>
     )
