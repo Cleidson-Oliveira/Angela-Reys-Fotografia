@@ -22,7 +22,7 @@ export default function Header({ home }: HeaderProps) {
 
     return (
         <Wrapper isHome={isHome}>
-            <img src="logotipo_horizontal_bege.png" alt="Logo Angela Reys Fotografia" />
+            <img src="/logotipo_horizontal_bege.png" alt="Logo Angela Reys Fotografia" />
             <div>
                 <ButtonToggleMenuMobile onClick={handleOpenMenuMobile}>
                     <FaBars/>
@@ -36,7 +36,7 @@ export default function Header({ home }: HeaderProps) {
                     <Link href="/">Home</Link>
                 </li>
                 <li>
-                    <Link href="/galeria">Galeria</Link>
+                    <Link href="/galeria/todos">Galeria</Link>
                 </li>
                 <li>
                     <Link href="/fotografa">A fotógrafa</Link>
