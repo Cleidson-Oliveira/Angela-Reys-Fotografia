@@ -50,7 +50,7 @@ export const getStaticProps: GetStaticProps = async () => {
     
   let ensaiosRecentes: RecentWorks[] = [];
   
-  let data = await fetch("https://app-api-photos.herokuapp.com/getImages");
+  let data = await fetch(`${process.env.BACK_END_URL}/getImages`);
   let datajson = await data.json();
   for(let i = datajson.length - 1; i > datajson.length - 7; i--){
       if(datajson[i] != undefined){
