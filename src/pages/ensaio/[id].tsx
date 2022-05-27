@@ -4,8 +4,7 @@ import Head from 'next/head';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 
-import Style from './style';
-const { Wrapper, Title, EnsaioContent } = Style
+import Wrapper, { Title, EnsaioContent } from './style';
 
 interface DataEnsaio {
     nomeCliente: string,

@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     flex-direction: column;
 `;
 
-const Title = styled.div`
+export const Title = styled.div`
     h1 { 
         color: rgb(255, 123, 34);
         line-height: 3em;
@@ -21,7 +21,7 @@ const Title = styled.div`
     }
 `;
 
-const EnsaioContent = styled.div`
+export const EnsaioContent = styled.div`
     width: 85%;
     display: flex;
     align-items: center;
@@ -37,4 +37,4 @@ const EnsaioContent = styled.div`
     }
 `;
 
-export default { Wrapper, Title, EnsaioContent };
+export default Wrapper;

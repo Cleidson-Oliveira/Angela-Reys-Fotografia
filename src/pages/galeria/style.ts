@@ -5,7 +5,7 @@ const Wrapper = styled.main`
     flex-wrap: wrap;
 `;
 
-const ListaTiposEnsaios = styled.div`
+export const ListaTiposEnsaios = styled.div`
     width: 100%;
     padding: 15px 0;
 
@@ -75,11 +75,11 @@ const ListaTiposEnsaios = styled.div`
     }
 `;
 
-const EnsaiosContent = styled.div`
+export const EnsaiosContent = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
 `;
 
-export default { Wrapper, ListaTiposEnsaios, EnsaiosContent };
+export default Wrapper;
