@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.main`
+const Wrapper = styled.main`
     display: flex;
     flex-wrap: wrap;
 `;
 
-export const ListaTiposEnsaios = styled.div`
+const ListaTiposEnsaios = styled.div`
     width: 100%;
     padding: 15px 0;
 
@@ -75,9 +75,11 @@ export const ListaTiposEnsaios = styled.div`
     }
 `;
 
-export const EnsaiosContent = styled.div`
+const EnsaiosContent = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
 `;
+
+export default { Wrapper, ListaTiposEnsaios, EnsaiosContent };

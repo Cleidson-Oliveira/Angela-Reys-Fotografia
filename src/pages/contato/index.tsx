@@ -5,7 +5,8 @@ import Input from "../../components/utility/Input";
 import Button from "../../components/utility/Button";
 import Footer from "../../components/Footer";
 
-import { Title, Wrapper, ContactField } from "./style";
+import Style from "./style";
+const { Title, Wrapper, ContactField } = Style;
 
 export default function Contato() {
 
@@ -17,13 +18,14 @@ export default function Contato() {
             </Head>
 
             <Header home={false} />
+
             <Wrapper>
                 <div>
                     <Title><h1>Entre em contato</h1></Title>
                     <Input type="text" labelText="Nome" placeholderText="Nome"/>
                     <Input type="email" labelText="E-mail" placeholderText="E-mail"/>
                     <Input type="textArea" labelText="Mensagem" placeholderText="Digite aqui a sua mensagem"/>
-                    <Button caminho="">Enviar</Button>
+                    <Button caminho="/contato">Enviar</Button>
                 </div>
                 <ContactField>
                     <img src={"Angela02.jpg"} alt="Ângela Reys - Fotógrafa" />
@@ -40,6 +42,7 @@ export default function Contato() {
                     <p>Sábado - 8h às 12h</p>
                 </ContactField>
             </Wrapper>
+
             <Footer />
         </>
     )

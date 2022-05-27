@@ -7,7 +7,8 @@ import Ensaios from "../../components/Ensaios";
 import Button from "../../components/utility/Button";
 import Footer from "../../components/Footer";
 
-import { EnsaiosContent, ListaTiposEnsaios, Wrapper } from "./style";
+import Style from "./style";
+const { EnsaiosContent, ListaTiposEnsaios, Wrapper } = Style;
 
 interface Ensaio {
     _id: string,

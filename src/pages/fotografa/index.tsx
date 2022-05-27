@@ -3,7 +3,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Button from "../../components/utility/Button";
 
-import { Wrapper } from "./style";
+import Wrapper from "./style";
 
 export default function Fotografa() {
     

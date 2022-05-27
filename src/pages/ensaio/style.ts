@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
     width: 100vw;
     display: flex;
     align-items: center;
     flex-direction: column;
 `;
 
-export const Title = styled.div`
+const Title = styled.div`
     h1 { 
         color: rgb(255, 123, 34);
         line-height: 3em;
@@ -21,7 +21,7 @@ export const Title = styled.div`
     }
 `;
 
-export const EnsaioContent = styled.div`
+const EnsaioContent = styled.div`
     width: 85%;
     display: flex;
     align-items: center;
@@ -36,3 +36,5 @@ export const EnsaioContent = styled.div`
         width: 95%;
     }
 `;
+
+export default { Wrapper, Title, EnsaioContent };

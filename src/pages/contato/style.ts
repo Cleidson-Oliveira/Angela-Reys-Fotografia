@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
     
     display: flex;
     flex-direction: row;
@@ -34,7 +34,7 @@ export const Wrapper = styled.div`
     }
 `;
 
-export const Title = styled.div`
+const Title = styled.div`
     display: flex;
 
     h1 {
@@ -42,7 +42,7 @@ export const Title = styled.div`
     }
 `;
 
-export const ContactField = styled.div`
+const ContactField = styled.div`
     h3 {
         margin: 15px 0 8px;
     }
@@ -54,3 +54,5 @@ export const ContactField = styled.div`
         width: 200px;
     }
 `;
+
+export default { Wrapper, Title, ContactField };
