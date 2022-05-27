@@ -5,8 +5,7 @@ import Input from "../../components/utility/Input";
 import Button from "../../components/utility/Button";
 import Footer from "../../components/Footer";
 
-import Style from "./style";
-const { Title, Wrapper, ContactField } = Style;
+import Wrapper, {Title, ContactField} from "./style";
 
 export default function Contato() {
 

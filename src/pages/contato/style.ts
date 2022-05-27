@@ -34,7 +34,7 @@ const Wrapper = styled.div`
     }
 `;
 
-const Title = styled.div`
+export const Title = styled.div`
     display: flex;
 
     h1 {
@@ -42,7 +42,7 @@ const Title = styled.div`
     }
 `;
 
-const ContactField = styled.div`
+export const ContactField = styled.div`
     h3 {
         margin: 15px 0 8px;
     }
@@ -55,4 +55,4 @@ const ContactField = styled.div`
     }
 `;
 
-export default { Wrapper, Title, ContactField };
+export default Wrapper;
