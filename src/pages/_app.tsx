@@ -5,7 +5,14 @@ import { useEffect } from 'react';
 
 import NProgress from "nprogress"
 
+import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from '../../styles/global';
+
+const theme = {
+  colors: {
+    primary: '#0070f3',
+  },
+}
 
 function MyApp({ Component, pageProps }: AppProps) {
 
@@ -34,7 +41,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   )
 }
