@@ -16,13 +16,13 @@ export default function CardEnsaio({ widthCards, caminho, capa, nomeCliente, tip
             widthCards={widthCards}
         >
             <Link href={caminho}>
-                <>
+                <a>
                     <img src={capa} />
                     <span>
                         <p>{nomeCliente}</p>
                         <p>{tipoEnsaio}</p>
                     </span>
-                </>
+                </a>
             </Link>
         </Wrapper>
     )
