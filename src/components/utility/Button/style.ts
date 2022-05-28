@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
         font-size: 1em;
         color: white;
         transition: .5s;
+        cursor: pointer;
 
         &:hover {
             box-shadow: black 4px 4px 12px;

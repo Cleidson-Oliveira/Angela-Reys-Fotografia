@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
     "axios": "^0.27.2",
     "next": "12.1.6",
+    "nodemailer": "^6.7.5",
+    "nodemailer-sendgrid": "^1.0.3",
     "nprogress": "^0.2.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
@@ -21,6 +24,8 @@
   },
   "devDependencies": {
     "@types/node": "17.0.35",
+    "@types/nodemailer": "^6.4.4",
+    "@types/nodemailer-sendgrid": "^1.0.0",
     "@types/nprogress": "^0.2.0",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.5",

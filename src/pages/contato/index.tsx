@@ -1,14 +1,31 @@
 import Head from "next/head";
 
+import { useState } from "react";
+
 import Header from "../../components/Header";
 import Input from "../../components/utility/Input";
-import Button from "../../components/utility/Button";
+import { FunctionalButton } from "../../components/utility/Button";
 import Footer from "../../components/Footer";
 
 import Wrapper, {Title, ContactField} from "./style";
 
-export default function Contato() {
+import {sendContactMail} from "../../services/sendmail"
 
+export default function Contato() {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [mensage, setMensage] = useState('')
+
+    const sendMail = () => {
+        sendContactMail(name, email, mensage)
+            .then((response)=>{console.log(response)})
+            .catch((err) => console.log(err))
+
+        setName('')
+        setEmail('')
+        setMensage('')
+    }
+    
     return (
         <>
             <Head>
@@ -21,10 +38,28 @@ export default function Contato() {
             <Wrapper>
                 <div>
                     <Title><h1>Entre em contato</h1></Title>
-                    <Input type="text" labelText="Nome" placeholderText="Nome"/>
-                    <Input type="email" labelText="E-mail" placeholderText="E-mail"/>
-                    <Input type="textArea" labelText="Mensagem" placeholderText="Digite aqui a sua mensagem"/>
-                    <Button caminho="/contato">Enviar</Button>
+                    <Input 
+                        type="text" 
+                        labelText="Nome" 
+                        placeholderText="Nome"
+                        value={name}
+                        setValue={setName}
+                    />
+                    <Input 
+                        type="email" 
+                        labelText="E-mail" 
+                        placeholderText="E-mail"
+                        value={email}
+                        setValue={setEmail}
+                    />
+                    <Input 
+                        type="textArea" 
+                        labelText="Mensagem" 
+                        placeholderText="Digite aqui a sua mensagem"
+                        value={mensage}
+                        setValue={setMensage}
+                    />
+                    <FunctionalButton func={()=>{sendMail()}}>Enviar</FunctionalButton>
                 </div>
                 <ContactField>
                     <img src={"Angela02.jpg"} alt="Ângela Reys - Fotógrafa" />
