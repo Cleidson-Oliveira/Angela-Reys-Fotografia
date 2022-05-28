@@ -2,14 +2,17 @@ import Head from "next/head";
 
 import { useState } from "react";
 
+import { ToastContainer, toast } from 'react-toastify';
+
+import {sendContactMail} from "../../services/sendmail";
+
 import Header from "../../components/Header";
 import Input from "../../components/utility/Input";
 import { FunctionalButton } from "../../components/utility/Button";
 import Footer from "../../components/Footer";
 
 import Wrapper, {Title, ContactField} from "./style";
-
-import {sendContactMail} from "../../services/sendmail"
+import 'react-toastify/dist/ReactToastify.min.css';
 
 export default function Contato() {
     const [name, setName] = useState('')
@@ -18,8 +21,15 @@ export default function Contato() {
 
     const sendMail = () => {
         sendContactMail(name, email, mensage)
-            .then((response)=>{console.log(response)})
-            .catch((err) => console.log(err))
+            .then((response)=>{
+                if (response.data.error) {
+                    throw new Error()
+                }
+                toast.success("E-mail enviado com sucesso!!!")
+            })
+            .catch(() => {
+                toast.error("Ocorreu um erro ao enviar o e-mail")
+            })
 
         setName('')
         setEmail('')
@@ -78,6 +88,8 @@ export default function Contato() {
             </Wrapper>
 
             <Footer />
+
+            <ToastContainer />
         </>
     )
 }
