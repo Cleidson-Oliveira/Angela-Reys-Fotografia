@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios, { AxiosPromise } from 'axios';
 
 export const sendContactMail = async (
     name: string,
@@ -12,7 +12,8 @@ export const sendContactMail = async (
     };
 
     try {
-        return await axios.post('/api/contact', data);
+        const response = await axios.post('/api/contact', data);
+        return response
     } catch (error) {
         return error;
     }

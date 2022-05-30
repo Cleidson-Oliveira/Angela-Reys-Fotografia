@@ -1,7 +1,6 @@
 import Head from "next/head";
-
 import { useState } from "react";
-
+import { AxiosResponse } from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 
 import {sendContactMail} from "../../services/sendmail";
@@ -18,22 +17,25 @@ export default function Contato() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [mensage, setMensage] = useState('')
-
+    
     const sendMail = () => {
-        sendContactMail(name, email, mensage)
-            .then((response)=>{
-                if (response.data.error) {
-                    throw new Error()
-                }
-                toast.success("E-mail enviado com sucesso!!!")
-            })
-            .catch(() => {
-                toast.error("Ocorreu um erro ao enviar o e-mail")
-            })
-
-        setName('')
-        setEmail('')
-        setMensage('')
+        if (name != '' && email != '' && mensage != '') {
+            sendContactMail(name, email, mensage)
+                .then((response) => {
+                    const result = response as AxiosResponse
+                    console.log(result.data)
+                    toast.success("E-mail enviado com sucesso!")
+                    setName('');
+                    setEmail('');
+                    setMensage('');
+                })
+                .catch((error) => {
+                    console.log(error)
+                    toast.error("Ocorreu um erro ao enviar o e-mail!");
+                })
+        } else {
+            toast.error("Todos os campos precisam estar preenchidos!");
+        }
     }
     
     return (

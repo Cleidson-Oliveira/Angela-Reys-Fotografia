@@ -14,11 +14,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     const { senderMail, name, content } = req.body;
 
-    if (!senderMail.trim() || !name.trim() || !content.trim()) {
-      // return res.status(403).send('');
-      throw new Error('Verifique se todos os campos estão preenchidos!')
-    }
-
     const message = {
       from: email,
       to: email,
