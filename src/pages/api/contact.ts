@@ -22,11 +22,12 @@ const sendMail = async (req: NextApiRequest, res: NextApiResponse) => {
       replyTo: senderMail
     };
 
-    transporter.sendMail(message);
+    transporter.sendMail(message).then(() => {
+      return res.json({
+        message: "Success"
+      });
+    })
 
-    return res.json({
-      message: "Success"
-    });
   } catch ({message}) {
     return res.json({
       error: true,
