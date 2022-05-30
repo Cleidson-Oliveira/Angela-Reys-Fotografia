@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport(
   })
 );
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+const sendMail = async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     const { senderMail, name, content } = req.body;
 
@@ -34,3 +34,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     });
   }
 };
+
+export default sendMail
