@@ -4,4 +4,12 @@
 
 Ver em [angela reys fotografia](https://angela-s-site.vercel.app/)
 
-Construído utilisando o framework <b>Next-Js</b> e a biblioteca <b>Styled Components</b> como ferramenta de estilização CSS-in-Js.
+Construído utilizando:</br>
+<b>Next-Js</b>;</br>
+<b>Styled Components</b>;</br>
+<b>Axios</b>;</br>
+<b>Nodemailer</b>;</br>
+<b>Nprogress</b>;</br>
+<b>Swiper</b>;</br>
+<b>React Toastify</b>;</br>
+<b>React Icons</b>;</br>
