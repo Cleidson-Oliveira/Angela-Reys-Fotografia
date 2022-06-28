@@ -13,7 +13,6 @@ let backgrounds = [
     "https://angelareysfotografia.s3.sa-east-1.amazonaws.com/carrocel/4.jpg"
 ]
 
-
 export default function Carrocel() {
     return (
         <Swiper

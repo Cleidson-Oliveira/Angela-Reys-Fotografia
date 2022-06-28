@@ -23,8 +23,6 @@ interface HomeProps {
 
 const Home: NextPage = ({ ensaiosRecentes }: HomeProps) => {
 
-  console
-
   return (
     <>
       <Head>
@@ -62,7 +60,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       ensaiosRecentes
     },
-    revalidate: 60 * 60 * 24 // 24 hrs
+    revalidate: 60 * 60 * 24 // 24 hours
   })
 };
 

@@ -1,8 +1,7 @@
 import { Wrapper, SocialIcons } from "./style";
 
-import { FaFacebook, FaInstagram, FaWhatsapp, FaPinterest } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { ImPinterest2 } from "react-icons/im";
-import { RiFacebookCircleLine } from "react-icons/ri";
 
 export default function Footer() {
     return (
