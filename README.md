@@ -2,7 +2,7 @@
 
 ## Esse repositório contém os códigos do site da fotografa Ângela Reys.
 
-Ver em [angela reys fotografia](https://angela-s-site.vercel.app/)
+Ver em [angela reys fotografia](https://angela-reys-fotografia.vercel.app//)
 
 Construído utilizando:</br>
 <b>Next-Js</b>;</br>
