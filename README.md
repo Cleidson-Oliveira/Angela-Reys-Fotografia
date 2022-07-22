@@ -5,6 +5,8 @@
 Ver em [Ângela Reys Fotografia](https://angela-reys-fotografia.vercel.app//)
 
 Construído utilizando:</br>
+<b>Typescript</b>;</br>
+<b>React-Js</b>;</br>
 <b>Next-Js</b>;</br>
 <b>Styled Components</b>;</br>
 <b>Axios</b>;</br>
