@@ -17,7 +17,6 @@ Construído utilizando:</br>
 ## Licença
 
 Os conteúdos a seguir têm seus direitos reservados à Ângela Reys Fotografia. Não utilize nada nele sem permissão:</br>
-The following contents are Copyright Ângela Reys Fotografia. You may not reuse anything therein without her permission:
 
 ```
 public/Angela01.jpg
@@ -27,5 +26,4 @@ public/Luana.png
 public/Mariana.png
 ```
 
-Todo conteúdo restante é de livre uso.</br>
-All other contents are free use.
+Todo conteúdo restante é de livre uso.
