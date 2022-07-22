@@ -1,6 +1,6 @@
 # Ângela Reys Fotografia
 
-## Esse repositório contém os códigos do site da fotografa Ângela Reys.
+## Esse repositório contém os códigos do site da fotógrafa Ângela Reys.
 
 Ver em [Ângela Reys Fotografia](https://angela-reys-fotografia.vercel.app//)
 
