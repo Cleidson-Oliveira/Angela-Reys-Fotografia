@@ -24,6 +24,8 @@ public/Angela02.jpg
 public/Eliane.jpg
 public/Luana.png
 public/Mariana.png
+public/favicon.ico
+public/logotipo_horizontal_bege.png
 ```
 
 Todo conteúdo restante é de livre uso.
