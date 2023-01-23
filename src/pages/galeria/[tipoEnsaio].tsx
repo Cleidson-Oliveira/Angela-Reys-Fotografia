@@ -71,7 +71,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
     const { tipoEnsaio } = params!;
     
-    const data = await fetch(`${process.env.BACK_END_URL}/getImages`);
+    const data = await fetch(`${process.env.BACK_END_URL}getImages`);
     let ensaios = await data.json();
 
     if (tipoEnsaio != "todos") {
